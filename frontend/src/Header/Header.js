@@ -8,20 +8,20 @@ class Header extends React.Component {
   render() {
     return <div className="header-main">
           <nav className="navbar navbar-full navbar-expand-lg">
-              <a href="#" className="navbar-brand"><img src={logo} title="logo" alt="logo" /></a>
+              <a href="http://codersgod.com/" target="_blank" className="navbar-brand"><img src={logo} title="logo" alt="logo" /></a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb">
                 <span className="navbar-toggler-icon"><i className="fa fa-bars"></i></span>
               </button>
               <div className="collapse navbar-collapse" id="navb">
                   <ul className="navbar-nav">
                       <li className="nav-item">
-                          <a className="nav-link" href="#">Home</a>
+                          <a className="nav-link" href="/" >Home</a>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link" href="#">About Us</a>
+                          <a className="nav-link" href="http://codersgod.com/about" target="_blank">About Us</a>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link" href="#">Reports</a>
+                          <a className="nav-link" href="http://codersgod.com/contactus" target="_blank">Contact Us</a>
                       </li>
                   </ul>
                   <form className="form-inline head-search autoComplete-box my-2 my-lg-0">
