@@ -3,9 +3,36 @@ import React from 'react';
 import logo from '../images/logo-main.jpg';
 import avatar from '../images/avatar-s-1.jpg';
 import './Header.css';
+//import ToggleButton from 'react-toggle-button';
+//import ToggleButton from './Header/ToggleButton';
+
 
 class Header extends React.Component {
+    
+    constructor(props){
+        super(props);
+        this.state = {
+            inputValue: 1
+        }
+    }
+
+    handleChange = (event) => {
+        //let inputValues = ( event.target.value ) ? false : true;
+        let inputValues = event.target.value;
+        console.log( 'event.target.value: '+event.target.value )
+        if( event.target.value == 1 ){
+            inputValues = 0;
+            document.body.classList.add('nightMode');
+        }else{
+            inputValues = 1;
+            document.body.classList.remove('nightMode');
+        }
+        this.setState({ inputValue : inputValues});
+        console.log(this);
+    }
+
   render() {
+    //this.state.bgColor = 1;
     return <div className="header-main">
           <nav className="navbar navbar-full navbar-expand-lg">
               <a href="http://codersgod.com/" target="_blank" className="navbar-brand"><img src={logo} title="logo" alt="logo" /></a>
@@ -32,7 +59,21 @@ class Header extends React.Component {
                   
               </div>
               <div className="header-right">
+                <div class="ToggleButton">
+                    <input type="checkbox" id="switch" value={this.state.inputValue} onClick={this.handleChange} class="checkbox" /> 
+                    <label for="switch" class="toggle"> 
+                        <p>OFF &nbsp; ON</p> 
+                    </label>
+                </div>
                   <div className="notify-main">
+                  { /*<ToggleButton
+                    value={ cthis.state.bgColor || false }
+                    onToggle={(value) => {
+                        cthis.setState({
+                            bgColor: !value,
+                        })
+                    }} /> */ }
+                    
                       <div className="dropdown">
                           <div className="dropdown-toggle notify-main" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                               <div className="notify-box">
