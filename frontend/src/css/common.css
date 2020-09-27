@@ -1,0 +1,49 @@
+/* @include transition(all,2s,ease-out); */
+@font-face { font-family: "ProximaNova"; font-style: normal; font-weight: 400; src: url("../fonts/ProximaNova-Regular.otf") format("opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"); }
+@font-face { font-family: "ProximaNova"; font-style: normal; font-weight: 600; src: url("../fonts/ProximaNova-Semibold.otf") format("opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype"); }
+@font-face { font-family: "ProximaNova"; font-style: normal; font-weight: 700; src: url("../fonts/ProximaNova-Bold.otf") format("opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"); }
+@font-face { font-family: "ProximaNova"; font-style: normal; font-weight: 900; src: url("../fonts/ProximaNova-Extrabld.otf") format("opentype"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype"); }
+body { color: #354052; background: #eff3f6; font-family: "ProximaNova"; font-size: 16px; font-weight: 400; }
+
+.btn { margin: 0; padding-top: 5px; padding-bottom: 5px; height: 32px; text-transform: none; font-size: 14px; }
+.btn.btn-width-auto { min-width: inherit; padding: 0 15px; }
+
+.btn-primary { background-color: #0052cc !important; }
+.btn-primary:hover { background-color: #003585 !important; }
+
+.btn-dark-gray { background-color: #e6ebef; border-color: #e6ebef; }
+.btn-dark-gray:hover { background: #dae1e7 !important; }
+
+.btn-light, .legend-btn { background-color: #f5f6f8; border-color: #f5f6f8; }
+
+
+
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+
+.font-14 { font-size: 14px; }
+
+a { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.form-control:focus { box-shadow: none; }
+
+.defult-avatar { display: inline-block; vertical-align: top; width: 24px; height: 24px; line-height: 24px; text-align: center; color: #ffffff; background: #36b27e; font-size: 13px; -webkit-border-radius: 15px; border-radius: 15px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ margin-right: 15px; }
+.defult-avatar img { -webkit-border-radius: 15px; border-radius: 15px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ width: 100%; height: 100%; }
+
+.green-color { color: #66B92E !important; }
+
+.orange-color { color: #f5a624 !important; }
+
+.red-color { color: #D65B4A !important; }
+
+.yellow-color { color: #FFD400 !important; }
+
+.dropdown-menu { border: none; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); }
+
+.full-width { float: left; width: 100%; position: relative; }
+
+.container-main { float: left; width: 100%; margin-top: 70px; padding-top: 45px; }
+
+@media (min-width: 1200px) { .container { max-width: 960px; } }
+.box-shadow-main, .note-box-main, .col-profile-box, .risk-guide-main, .risk-assessment-main, .risk-Summary-main, .defination-table { -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.05); box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.05); border: 1px solid #e8ecf0; }
+
+

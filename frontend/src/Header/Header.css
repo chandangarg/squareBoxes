@@ -1,0 +1,29 @@
+.header-main { position: fixed; left: 0; top: 0; width: 100%; z-index: 1999; height: 70px; background: #ffffff; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /*--------- nav css ---*/ /*---- header search ---*/ }
+.header-main .navbar { box-shadow: none; padding: 9px 40px; }
+.header-main .navbar .navbar-brand img { width: 59px; }
+.header-main .header-right { float: right; }
+.header-main .header-right .notify-main { float: left; width: auto; margin-top: 7px; }
+.header-main .header-right .notify-main.dropdown-toggle::after { display: none; }
+.header-main .header-right .notify-main .notify-box { display: inline-block; margin-top: 7px; vertical-align: top; }
+.header-main .header-right .notify-main .notify-box .noti-icon-badge { position: absolute; right: -14px; top: 0px; padding: 0px 10px; line-height: 1.5; font-weight: 600; border-radius: 10px; background: #ffeae5; min-width: 29px; color: #bf2600; font-size: 12px; text-align: center; }
+.header-main .header-right .notify-main .fa-bell { color: #334051; cursor: pointer; }
+.header-main .header-right .notify-main .fa-bell:before { font-size: 20px; }
+.header-main .header-right .notify-main .dropdown-menu { top: 54px; }
+.header-main .header-right .profile-main { float: left; width: auto; }
+.header-main .header-right .profile-main .porfile-section { display: inline-block; width: auto; cursor: pointer; margin-left: 33px; }
+.header-main .header-right .profile-main .porfile-section.dropdown-toggle::after { display: none; }
+.header-main .header-right .profile-main .porfile-section .header-profile-box { display: block; width: auto; cursor: pointer; position: relative; padding: 0 44px 0 55px; min-height: 55px; }
+.header-main .header-right .profile-main .porfile-section .header-profile-box .avatar { position: absolute; left: 0; top: 7px; width: 40px; height: 40px; -webkit-border-radius: 26px; border-radius: 26px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ overflow: hidden; }
+.header-main .header-right .profile-main .porfile-section .header-profile-box .avatar img { max-width: 100%; }
+.header-main .header-right .profile-main .porfile-section .header-profile-box .avatar-name { width: 105px; white-space: nowrap; overflow: hidden; display: block; text-overflow: ellipsis; padding: 13px 0 0 0; color: #7F8FA4; font-size: 14px; line-height: 1.1; }
+.header-main .header-right .profile-main .porfile-section .header-profile-box .avatar-name span { font-size: 16px; font-weight: 700; color: #354052; white-space: nowrap; overflow: hidden; display: block; text-overflow: ellipsis; }
+.header-main .header-right .profile-main .porfile-section .header-profile-box .head-down-arrow { position: absolute; right: 0; top: 16px; padding: 5px; }
+.header-main .header-right .profile-main .porfile-section .header-profile-box .head-down-arrow:before { font-size: 12px; }
+.header-main .header-right .profile-main .porfile-section .dropdown-menu { left: inherit; right: 0; top: 61px; }
+.header-main .navbar-nav .nav-link { font-size: 16px; color: #354052; letter-spacing: 0.5px; font-weight: 600; }
+.header-main .navbar-nav .nav-link:hover, .header-main .navbar-nav .nav-link.active { color: #ef3a4c; }
+.header-main .form-inline.head-search { width: 404px; max-width: 100%; margin-left: 5px; }
+.header-main .form-inline.head-search .input-group { width: 100% !important; }
+.header-main .form-inline.head-search .input-group-append { cursor: pointer; }
+.header-main .form-inline.head-search .border { border: 1px solid #7b8fa6 !important; border-right: 0px !important; }
+.header-main .form-inline.head-search .input-group-text { border: 1px solid #7b8fa6 !important; border-left: 0px !important; }

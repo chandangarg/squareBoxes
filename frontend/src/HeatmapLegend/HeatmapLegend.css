@@ -1,0 +1,35 @@
+.risk-guide-main { background: #fafbfc; padding: 25px 25px 0px 25px; border: 1px solid #e8ecf0; }
+.risk-guide-main .risk-guide-btn { padding-right: 135px; position: relative; }
+.risk-guide-main .risk-guide-btn .risk-guide-box { width: 110px; }
+.risk-guide-main .risk-guide-btn .btn { position: absolute; right: 0; top: 0; }
+
+.risk-guide-box { float: left; width: 152px; margin: 0; padding: 0 15px 0 0; }
+.risk-guide-box h2 { display: block; font-size: 16px; font-weight: 600; color: #354052; margin: 0px; padding: 0px; text-transform: uppercase; }
+.risk-guide-box .risk-guide-bar { display: block; height: 14px; background: #5e6c84; margin: 17px 0 20px 0; -webkit-border-radius: 8px; border-radius: 8px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ }
+.risk-guide-box .risk-guide-bar.low-bar { background: #66B92E !important; }
+.risk-guide-box .risk-guide-bar.moderate-bar { background: #FFD400 !important; }
+.risk-guide-box .risk-guide-bar.high-bar { background: #f5a624 !important; }
+.risk-guide-box .risk-guide-bar.extreme-bar { background: #D65B4A !important; }
+.risk-guide-main .full-width {display: flex;
+flex-direction: row;
+flex-wrap: nowrap;}
+
+
+.risk-guide-main .full-width {
+    display: flex;
+    font-size: 0;
+    flex-wrap:wrap;
+}
+
+.risk-guide-main .full-width .risk-guide-box {
+
+    display: inline-block;
+    flex-grow: 1;
+    height:100px;    
+    width: calc(100% * (1/6) - 10px - 1px);
+    max-width: 152px;
+
+}
+
+
+
