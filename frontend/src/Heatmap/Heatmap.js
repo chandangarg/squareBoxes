@@ -74,7 +74,7 @@ class Heatmap extends React.Component {
         });
         return (
             <div className="risk-assessment-main full-width">
-                <h2>Edit Heatmap</h2>
+                <h2>Dynamic Square Boxes </h2>
                 <div className="risk-assessment-box" id="risk-assessment-box">
                     <div className="assessment-vertical-text"><span>Likelihoods</span></div>
                     <div className="risk-assessment-sub">
