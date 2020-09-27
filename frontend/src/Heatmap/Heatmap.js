@@ -76,7 +76,7 @@ class Heatmap extends React.Component {
             <div className="risk-assessment-main full-width">
                 <h2>Dynamic Square Boxes </h2>
                 <div className="risk-assessment-box" id="risk-assessment-box">
-                    <div className="assessment-vertical-text"><span>Likelihoods</span></div>
+                    <div className="assessment-vertical-text"><span>Y Axis Legends</span></div>
                     <div className="risk-assessment-sub">
                         <div id="heatmap-box" className="risk-assessment-board">
                             {buttons}
@@ -85,7 +85,7 @@ class Heatmap extends React.Component {
                             {RowLabelsData}
                         </div> 
                     </div>
-                    <div className="impacts-text">Impacts</div>   
+                    <div className="impacts-text">X Axis Legends</div>   
                     <div className="assessment-right-label">
                         {ColumnLabelsData}
                     </div>
