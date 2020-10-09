@@ -35,7 +35,7 @@ class ContentSection extends React.Component {
     let heatmapComponent = this;
     //console.log('riskdata componentDidMount: ');
     // Optionally the request above could also be done as
-    axios.get( this.state.backendpath+'/heatmap.php', {
+    axios.get( this.state.backendpath+'/data.json', {
         params: {
           ID: '1C59FC3E-CAAB-4DDB-7838-08D6B059DF9A'
         }
