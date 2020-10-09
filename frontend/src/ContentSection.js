@@ -10,7 +10,7 @@ import axios from 'axios';
 
 const MainData = { 
     //visible: false,
-    backendpath:'https://square-boxes.vercel.app/', 
+    backendpath:'https://square-boxes.vercel.app/frontend/public', 
     //backendpath:'http://localhost/squareboxes/frontend/public/', 
     inputStyle: 'none',
     inputClass: '',
