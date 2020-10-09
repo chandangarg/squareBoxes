@@ -11,9 +11,25 @@ class Header extends React.Component {
     
     constructor(props){
         super(props);
-        this.state = {
-            inputValue: 1
+        const nightMode = window.localStorage.getItem('nightMode');
+        if( nightMode == 0 ){
+            this.state = {
+                inputValue: 0,
+                checkedValue: 1
+            }
+            document.body.classList.add('nightMode');
+        }else{
+            this.state = {
+                inputValue: 1,
+                checkedValue: 0
+            }
         }
+        
+    }
+
+    componentDidMount(){
+        //this.setState({ checkedValue : 1});
+        console.log('asddddddd');
     }
 
     handleChange = (event) => {
@@ -23,15 +39,19 @@ class Header extends React.Component {
         if( event.target.value == 1 ){
             inputValues = 0;
             document.body.classList.add('nightMode');
+            window.localStorage.setItem('nightMode', 0);
         }else{
             inputValues = 1;
             document.body.classList.remove('nightMode');
+            window.localStorage.setItem('nightMode', 1);
         }
         this.setState({ inputValue : inputValues});
         console.log(this);
     }
 
+
   render() {
+    
     //this.state.bgColor = 1;
     return <div className="header-main">
           <nav className="navbar navbar-full navbar-expand-lg">
@@ -60,7 +80,7 @@ class Header extends React.Component {
               </div>
               <div className="header-right">
                 <div class="ToggleButton">
-                    <input type="checkbox" id="switch" value={this.state.inputValue} onClick={this.handleChange} class="checkbox" /> 
+                    <input type="checkbox" defaultChecked={this.state.checkedValue} id="switch" value={this.state.inputValue} onClick={this.handleChange} class="checkbox" /> 
                     <label for="switch" class="toggle"> 
                         <p>OFF &nbsp; ON</p> 
                     </label>

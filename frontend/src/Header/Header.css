@@ -69,3 +69,5 @@ body.nightMode .sidebar-section .note-box-main, body.nightMode .risk-assessment-
 body.nightMode .risk-guide-main{ border: 1px solid #7F8FA4; }
 body.nightMode .priority:after{ background: #7F8FA4;}
 body.nightMode .risk-assessment-row .risk-assessment-col > .full-width{ border-radius: 5px;}
+.header-main .fa-bars{ font-size: 28px;}
+body.nightMode .header-main .fa-bars{ color:#fff; }
