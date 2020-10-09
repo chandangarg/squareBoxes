@@ -28,7 +28,6 @@ class HeatmapColumnLabel extends React.Component {
                 document.getElementById('colkey_'+colId).focus();
             }, 50);
         }
-        
     }
 
     _handleBlurColumnLabelItem = (event) => {
